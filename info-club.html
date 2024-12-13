@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/home.css" />
-    <title>VTT Fun Club</title>
+    <title>VTT Fun Club - Les informations du club</title>
   </head>
 
   <body>
-    <!-- Navbar -->
     <nav aria-label="navbar">
       <a href="/home.html">
         <img src="images/logo.svg" alt="Logo du VTT Fun Club" style="height: 60px" />
@@ -31,28 +30,32 @@
           <a href="#ecole">Ecole Française de Cyclisme</a>
         </div>
         <div class="nav-item">
-          <a href="http://vttfunclub.fr/spip.php?rubrique4">Compétitions</a>
+          <a href="#competitions">Compétitions</a>
           <div class="submenu">
-            <a href="http://vttfunclub.fr/spip.php?rubrique155">France 2024</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique122">Calendrier</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique10">Résultats</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique143">Complétitions internationale</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique134">France archives</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique97">Coupes du Grand Est VTT</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique96">Courses VTT</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique98">DH / Enduro</a>
-            <a href="http://vttfunclub.fr/spip.php?rubrique99">Route / Cyclo Cross / Divers</a>
+            <a href="#competitions">France 2024</a>
+            <a href="#calendrier">Calendrier</a>
+            <a href="#resultats">Résultats</a>
+            <a href="#competitions-internationale">Complétitions internationale</a>
+            <a href="#france-archives">France archives</a>
+            <a href="#coupes-du-grand-est">Coupes du Grand Est VTT</a>
+            <a href="#coursesVTT">Courses VTT</a>
+            <a href="#enduro">DH / Enduro</a>
+            <a href="#route">Route / Cyclo Cross / Divers</a>
           </div>
         </div>
         <div class="nav-item">
-          <a href="/stages-et-formations.html">Stages</a>
+          <span class="nav-link">Stages</span>
+          <div class="submenu">
+            <a href="#vacances">Stages</a>
+            <a href="#perfectionnement">Formations</a>
+          </div>
         </div>
         <div class="nav-item">
           <span class="nav-link">Blog</span>
           <div class="submenu">
-            <a href="http://www.vttfunclub.fr/spip.php?rubrique5">Rando, raid VTT</a>
-            <a href="http://www.vttfunclub.fr/spip.php?rubrique64">VTT pratique</a>
-            <a href="/petites-annonces.html">Petites annonces</a>
+            <a href="#rando-raid-vtt">Rando, raid VTT</a>
+            <a href="#vtt-pratique">VTT pratique</a>
+            <a href="#petites-annonces">Petites annonces</a>
           </div>
         </div>
         <div class="nav-item">
@@ -65,33 +68,14 @@
       </div>
     </nav>
 
-    <!-- Hero video -->
-    <section class="hero">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="vidéos/herovideo.mp4" type="video/mp4" />
-        <track kind="subtitles" src="videos/subtitles.vtt" srclang="fr" label="Français" />
-        <track kind="descriptions" src="videos/descriptions.vtt" srclang="fr" label="Description" />
-      </video>
-      <div class="hero-content">
-        <h1>VTT Fun Club</h1>
-        <p>Découvrez la passion du VTT avec nous 🚲</p>
-        <a href="#club" class="cta-button">Rejoignez-nous</a>
-      </div>
-    </section>
-
-    <!-- Warning banner -->
-    <div class="warning-banner">
-      <p>
-        Vacances de Noël : fermeture du club du
-        <u>22/12/2024</u>
-        au
-        <u>05/01/2025</u>
-      </p>
-    </div>
-
-    <!-- Articles récents -->
+    <!-- Les 5 articles -->
     <section class="articles-recents">
-      <h2>Dernières actualités</h2>
+      <h2>Les informations du club</h2>
+      <p>
+        La composition du bureau, les vêtements du club,
+        <br />
+        le trombinoscope, les licences... et plus encore !
+      </p>
       <div class="articles-grid">
         <article class="article-card">
           <div class="article-content">
@@ -129,47 +113,43 @@
         <article class="article-card">
           <div class="article-content">
             <span class="article-date">12 décembre 2024</span>
-            <h3>Revue de Presse 2025</h3>
-            <p>
-              Toutes les revues de Presse de la saison 2025 http://www.vttfunclub.fr/IMG/jpg/es...
-              http://www.vttfunclub.fr/IMG/jpg/es... http://www.vttfunclub.fr/IMG/jpg/es... (...)
-            </p>
-            <a href="#" class="article-link">Lire la suite →</a>
-          </div>
-          <div class="article-image">
-            <img src="images/presse.png" alt="roue VTT" />
+            <h3>Vacances de Noêl : fermeture du club du 22/12/2024 au 05/01/2025</h3>
+            <a href="http://www.vttfunclub.fr/spip.php?article2692" class="article-link">
+              Lire la suite →
+            </a>
           </div>
         </article>
 
         <article class="article-card">
           <div class="article-content">
-            <span class="article-date">1er décembre 2024</span>
-            <h3>Récompenses Villers</h3>
+            <span class="article-date">novembre 2023</span>
+            <h3>Assemblée Générale du Vtt Fun Club 2023</h3>
             <p>
-              RECOMPENSES SPORTIFS VILLERS Vendredi 29 novembre 2024, la commune de
-              VILLERS-les-NANCY organisait la cérémonie des récompenses des meilleurs sportifs de
-              l’année 2024 au Centre des Ecraignes. Comme (...)
+              ASSEMBLEE GENERALE DU VTT FUN CLUB 2023 L’ASSEMBLEE GENERALE DU CLUB avait lieu
+              exceptionnellement un samedi, le 18 novembre 2023 dans le gymnase Jolimet-Ruzic au
+              stade Roger Bambuck route de Maron à VILLERS. Cette édition présentait également un
+              côté festif dû au trentième anniversaire de l’association. Les invitations avaient été
+              lancées auprès des anciens licenciés, certains ont répondu présents, au grand plaisir
+              des dirigeants qui avaient repris le club créé en 1993 dès 2001, comme Régis FAGOT, la
+              (...)
             </p>
-            <a href="#" class="article-link">Lire la suite →</a>
+            <a href="http://www.vttfunclub.fr/spip.php?article2685" class="article-link">
+              Lire la suite →
+            </a>
           </div>
           <div class="article-image">
-            <img src="images/recompenses.jpg" alt="roue VTT" />
+            <img src="images/assemblee.jpg" alt="roue VTT" />
           </div>
         </article>
 
         <article class="article-card">
           <div class="article-content">
-            <span class="article-date">1er décembre 2024</span>
-            <h3>Cortège St. Nicolas</h3>
-            <p>
-              CORTEGE SAINT NICOLAS Le COMITE DES FETES de VILLERS-les-NANCY organisait le défilé de
-              Saint-Nicolas le samedi 23 novembre 2024 avec plus de 22 éléments défilant : chars,
-              fanfare, batucada, (...)
-            </p>
-            <a href="#" class="article-link">Lire la suite →</a>
-          </div>
-          <div class="article-image">
-            <img src="images/nicolas.jpg" alt="roue VTT" />
+            <span class="article-date">septembre 2023</span>
+            <h3>Déclaration d’accident / Fiche sanitaire</h3>
+            <p>Déclaration d’accident Fiche Sanitaire</p>
+            <a href="http://www.vttfunclub.fr/spip.php?article560" class="article-link">
+              Lire la suite →
+            </a>
           </div>
         </article>
       </div>
@@ -179,22 +159,19 @@
     <footer>
       <div class="footer-content">
         <nav class="nav-footer" aria-label="Navigation footer">
-          <a href="http://www.vttfunclub.fr/spip.php?page=rss">Podcast et RSS</a>
-          <a href="http://www.vttfunclub.fr/spip.php?page=plan&lang=fr">Plan</a>
-          <a href="/contact.html">Contact</a>
-          <a href="http://www.vttfunclub.fr/spip.php?page=mentions&lang=fr">Mentions</a>
+          <a href="#">Podcast et RSS</a>
+          <a href="#">Plan</a>
+          <a href="#">Contact</a>
+          <a href="#">Mentions</a>
           <a href="#">Aide</a>
-          <a href="http://www.vttfunclub.fr/spip.php?page=login&url=%2Fecrire%2F%3F">Rédaction</a>
-          <a
-            href="http://www.vttfunclub.fr/spip.php?page=login&url=spip.php%3Fpage%3Darticle_pdf%2527%26amp%3Bid_article%3D1596&lang=fr">
-            Se connecter
-          </a>
+          <a href="#">Rédaction</a>
+          <a href="#">Se connecter</a>
         </nav>
       </div>
       <div class="copyright">2002-2024 © Vtt Fun Club - Tous droits réservés</div>
       <div class="powered-by">
         Ce site est géré sous SPIP 3.2.19 et utilise le squelette EVA-Web 4.2
-        <img src="images/logo_eva3.png" alt="EVA-Web logo" />
+        <img src="path/to/eva-logo.png" alt="EVA-Web logo" />
       </div>
     </footer>
 

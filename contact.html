@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - VTT Fun Club</title>
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav aria-label="navbar">
+      <a href="/home.html">
+        <img src="images/logo.svg" alt="Logo du VTT Fun Club" style="height: 60px" />
+      </a>
+
+      <div class="nav-menu">
+        <div class="nav-item">
+          <a href="/home.html">Accueil</a>
+        </div>
+        <div class="nav-item">
+          <span class="nav-link">Le club</span>
+          <div class="submenu">
+            <a href="/info-club.html">Info club</a>
+            <a href="/vie-du-club">Vie du club</a>
+            <a href="/rdv-hebdomadaire">RDV hebdomadaire</a>
+            <a href="/club-etait-present">Le Club était Présent</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#ecole">Ecole Française de Cyclisme</a>
+        </div>
+        <div class="nav-item">
+          <a href="#competitions">Compétitions</a>
+          <div class="submenu">
+            <a href="#competitions">France 2024</a>
+            <a href="#calendrier">Calendrier</a>
+            <a href="#resultats">Résultats</a>
+            <a href="#competitions-internationale">Complétitions internationale</a>
+            <a href="#france-archives">France archives</a>
+            <a href="#coupes-du-grand-est">Coupes du Grand Est VTT</a>
+            <a href="#coursesVTT">Courses VTT</a>
+            <a href="#enduro">DH / Enduro</a>
+            <a href="#route">Route / Cyclo Cross / Divers</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/stages-et-formations.html">Stages</a>
+        </div>
+        <div class="nav-item">
+          <span class="nav-link">Blog</span>
+          <div class="submenu">
+            <a href="http://www.vttfunclub.fr/spip.php?rubrique5">Rando, raid VTT</a>
+            <a href="http://www.vttfunclub.fr/spip.php?rubrique64">VTT pratique</a>
+            <a href="/petites-annonces.html">Petites annonces</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/presse">Presse</a>
+        </div>
+      </div>
+
+      <div class="nav-search">
+        <input type="search" placeholder="Rechercher..." aria-label="Rechercher" />
+      </div>
+    </nav>
+
+    <!-- Formulaire de contact -->
+
+    <main class="contact-container">
+      <section class="contact-form">
+        <h1>Contactez-nous</h1>
+        <form action="/submit" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Sexe *</label>
+            <div class="radio-group">
+              <div class="radio-item">
+                <input type="radio" id="homme" name="sexe" value="homme" required />
+                <label for="homme">Homme</label>
+              </div>
+              <div class="radio-item">
+                <input type="radio" id="femme" name="sexe" value="femme" />
+                <label for="femme">Femme</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="adresse">Adresse *</label>
+            <input type="text" id="adresse" name="adresse" required />
+          </div>
+
+          <div class="form-group">
+            <label for="code_postal">Code postal *</label>
+            <input type="text" id="code_postal" name="code_postal" required />
+          </div>
+
+          <div class="form-group">
+            <label for="ville">Ville *</label>
+            <input type="text" id="ville" name="ville" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pays">Pays *</label>
+            <input type="text" id="pays" name="pays" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+      </section>
+
+      <section class="contact-info">
+        <div class="info-box">
+          <h2>Informations</h2>
+          <p>
+            <strong>Adresse :</strong>
+            14, rue de la grande corvée - 54600 - VILLERS LES NANCY
+          </p>
+          <p>
+            <strong>Téléphone :</strong>
+            06 81 29 36 88
+          </p>
+          <p>
+            <strong>Email :</strong>
+            contact@vttfunclub.fr
+          </p>
+          <p><strong>Horaires :</strong></p>
+          <ul>
+            <li>Lundi - Vendredi : 9h - 18h</li>
+            <li>Samedi : 9h - 17h</li>
+            <li>Dimanche : 9h30 - 11h30</li>
+          </ul>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            title="Localisation du VTT Fun Club"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.4080448089!2d6.1523!3d48.6697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDQwJzIyLjkiTiA2wrAwOScwOC4zIkU!5e0!3m2!1sfr!2sfr!4v1234567890!5m2!1sfr!2sfr"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <nav class="nav-footer" aria-label="Navigation footer">
+          <a href="http://www.vttfunclub.fr/spip.php?page=rss">Podcast et RSS</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=plan&lang=fr">Plan</a>
+          <a href="/contact.html">Contact</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=mentions&lang=fr">Mentions</a>
+          <a href="#">Aide</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=login&url=%2Fecrire%2F%3F">Rédaction</a>
+          <a
+            href="http://www.vttfunclub.fr/spip.php?page=login&url=spip.php%3Fpage%3Darticle_pdf%2527%26amp%3Bid_article%3D1596&lang=fr">
+            Se connecter
+          </a>
+        </nav>
+      </div>
+      <div class="copyright">2002-2024 © Vtt Fun Club - Tous droits réservés</div>
+      <div class="powered-by">
+        Ce site est géré sous SPIP 3.2.19 et utilise le squelette EVA-Web 4.2
+        <img src="images/logo_eva3.png" alt="EVA-Web logo" />
+      </div>
+    </footer>
+
+    <!-- Partenaires -->
+    <section class="partenaires">
+      <h2>Nos partenaires</h2>
+      <div class="partenaire-logo">
+        <img src="images/partenaires/siteon33-d9342.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon35-cf727.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon39-274ea.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon41-7c924.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon42-b1c33.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon45-8dd65.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon48-7c396.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon51-53a14.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon54-0d284.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon57-04342.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon58-eba6e.jpg" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon59-60303.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon64-544af.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon68-4e15e.png" alt="Partenaire 1" />
+        <img src="images/partenaires/siteon69-c1c7e.jpg" alt="Partenaire 1" />
+      </div>
+    </section>
+  </body>
+</html>
