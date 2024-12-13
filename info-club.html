@@ -10,60 +10,73 @@
   <body>
     <!-- Navbar -->
     <nav aria-label="navbar">
-        <a href="/home.html">
-          <img src="images/logo.svg" alt="Logo du VTT Fun Club" style="height: 60px" />
-        </a>
-  
-        <div class="nav-menu">
-          <div class="nav-item">
-            <a href="/home.html">Accueil</a>
-          </div>
-          <div class="nav-item">
-            <span class="nav-link">Le club</span>
-            <div class="submenu">
-              <a href="/info-club.html">Info club</a>
-              <a href="/vie-du-club">Vie du club</a>
-              <a href="/rdv-hebdomadaire">RDV hebdomadaire</a>
-              <a href="/club-etait-present">Le Club était Présent</a>
-            </div>
-          </div>
-          <div class="nav-item">
-            <a href="#ecole">Ecole Française de Cyclisme</a>
-          </div>
-          <div class="nav-item">
-            <a href="http://vttfunclub.fr/spip.php?rubrique4">Compétitions</a>
-            <div class="submenu">
-              <a href="http://vttfunclub.fr/spip.php?rubrique155">France 2024</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique122">Calendrier</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique10">Résultats</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique143">Complétitions internationale</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique134">France archives</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique97">Coupes du Grand Est VTT</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique96">Courses VTT</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique98">DH / Enduro</a>
-              <a href="http://vttfunclub.fr/spip.php?rubrique99">Route / Cyclo Cross / Divers</a>
-            </div>
-          </div>
-          <div class="nav-item">
-            <a href="/stages-et-formations.html">Stages</a>
-          </div>
-          <div class="nav-item">
-            <span class="nav-link">Blog</span>
-            <div class="submenu">
-              <a href="http://www.vttfunclub.fr/spip.php?rubrique5">Rando, raid VTT</a>
-              <a href="http://www.vttfunclub.fr/spip.php?rubrique64">VTT pratique</a>
-              <a href="/petites-annonces.html">Petites annonces</a>
-            </div>
-          </div>
-          <div class="nav-item">
-            <a href="/presse">Presse</a>
+      <!-- Logo -->
+      <a href="/home.html">
+        <img src="images/logo.svg" alt="Logo du VTT Fun Club" style="height: 60px" />
+      </a>
+
+      <!--  Menu hamburger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <!--  Menu principal -->
+      <div class="nav-menu">
+        <div class="nav-item">
+          <a href="/home.html">Accueil</a>
+        </div>
+        <div class="nav-item">
+          <span class="nav-link">Le club</span>
+          <div class="submenu">
+            <a href="/info-club.html">Info club</a>
+            <a href="/vie-du-club.html">Vie du club</a>
+            <a href="/rendez-vous-hebdo.html">RDV hebdomadaire</a>
+            <a href="/le-club-etait-present.html">Le Club était Présent</a>
           </div>
         </div>
-  
-        <div class="nav-search">
-          <input type="search" placeholder="Rechercher..." aria-label="Rechercher" />
+        <div class="nav-item">
+          <a href="/ecole-francaise-de-cyclisme.html">Ecole Française de Cyclisme</a>
         </div>
-      </nav>
+        <div class="nav-item">
+          <a href="http://vttfunclub.fr/spip.php?rubrique4">Compétitions</a>
+          <div class="submenu">
+            <a href="http://vttfunclub.fr/spip.php?rubrique155">France 2024</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique122">Calendrier</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique10">Résultats</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique143">Complétitions internationale</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique134">France archives</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique97">Coupes du Grand Est VTT</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique96">Courses VTT</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique98">DH / Enduro</a>
+            <a href="http://vttfunclub.fr/spip.php?rubrique99">Route / Cyclo Cross / Divers</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/stages-et-formations.html">Stages</a>
+        </div>
+        <div class="nav-item">
+          <span class="nav-link">Blog</span>
+          <div class="submenu">
+            <a href="http://www.vttfunclub.fr/spip.php?rubrique5">Rando, raid VTT</a>
+            <a href="http://www.vttfunclub.fr/spip.php?rubrique64">VTT pratique</a>
+            <a href="/petites-annonces.html">Petites annonces</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="/revue-de-presse.html">Presse</a>
+        </div>
+      </div>
+
+      <!-- Barre de recherche -->
+      <div class="nav-search">
+        <input type="search" placeholder="Rechercher..." aria-label="Rechercher" />
+      </div>
+
+      <!-- Top Button -->
+      <a href="#bottom" title="Bas de la Page">
+        <img id="Top" src="images/ancrebas.gif" alt="Aller en bas de page" />
+      </a>
     </nav>
 
     <!-- Les 5 articles -->
@@ -155,21 +168,29 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer-content">
+      <div class="footer-content" id="bottom">
         <nav class="nav-footer" aria-label="Navigation footer">
-          <a href="#">Podcast et RSS</a>
-          <a href="#">Plan</a>
-          <a href="#">Contact</a>
-          <a href="#">Mentions</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=rss">Podcast et RSS</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=plan&lang=fr">Plan</a>
+          <a href="/contact.html">Contact</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=mentions&lang=fr">Mentions</a>
           <a href="#">Aide</a>
-          <a href="#">Rédaction</a>
-          <a href="#">Se connecter</a>
+          <a href="http://www.vttfunclub.fr/spip.php?page=login&url=%2Fecrire%2F%3F">Rédaction</a>
+          <a
+            href="http://www.vttfunclub.fr/spip.php?page=login&url=spip.php%3Fpage%3Darticle_pdf%2527%26amp%3Bid_article%3D1596&lang=fr">
+            Se connecter
+          </a>
+          <!-- Bottom Button -->
+          <div id="bottom"></div>
+          <a href="#top" title="Haut de la Page">
+            <img id="Bot" src="images/ancrehaut.gif" alt="Aller en haut de la page" />
+          </a>
         </nav>
       </div>
       <div class="copyright">2002-2024 © Vtt Fun Club - Tous droits réservés</div>
       <div class="powered-by">
         Ce site est géré sous SPIP 3.2.19 et utilise le squelette EVA-Web 4.2
-        <img src="path/to/eva-logo.png" alt="EVA-Web logo" />
+        <img src="images/logo_eva3.png" alt="EVA-Web logo" />
       </div>
     </footer>
 
@@ -177,21 +198,55 @@
     <section class="partenaires">
       <h2>Nos partenaires</h2>
       <div class="partenaire-logo">
-        <img src="images/partenaires/siteon33-d9342.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon35-cf727.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon39-274ea.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon41-7c924.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon42-b1c33.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon45-8dd65.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon48-7c396.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon51-53a14.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon54-0d284.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon57-04342.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon58-eba6e.jpg" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon59-60303.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon64-544af.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon68-4e15e.png" alt="Partenaire 1" />
-        <img src="images/partenaires/siteon69-c1c7e.jpg" alt="Partenaire 1" />
+        <a href="https://www.villerslesnancy.fr/fr/accueil.html">
+          <img src="images/partenaires/siteon33-d9342.jpg" alt="Logo Ville de Villers-lès-Nancy" />
+        </a>
+        <a href="http://www.ffc.fr/">
+          <img
+            src="images/partenaires/siteon35-cf727.png"
+            alt="Logo Fédération Française de Cyclisme" />
+        </a>
+        <a href="http://comitegrandestcyclisme.fr/">
+          <img src="images/partenaires/siteon39-274ea.jpg" alt="Logo Comité Grand Est Cyclisme" />
+        </a>
+        <a href="https://www.meurthe-et-moselle.fr/">
+          <img
+            src="images/partenaires/siteon41-7c924.jpg"
+            alt="Logo Département Meurthe-et-Moselle" />
+        </a>
+        <a href="https://www.krys.com/opticien/france/meurthe-et-moselle/opticien-frouard/frouard">
+          <img src="images/partenaires/siteon42-b1c33.jpg" alt="Logo Krys Frouard" />
+        </a>
+        <a href="http://www.hurstel.fr/">
+          <img src="images/partenaires/siteon45-8dd65.png" alt="Logo Hurstel" />
+        </a>
+        <a href="http://www.pagesjaunes.fr/pros/08138073">
+          <img src="images/partenaires/siteon48-7c396.jpg" alt="Logo Pages Jaunes" />
+        </a>
+        <a href="https://www.nancy.fr/">
+          <img src="images/partenaires/siteon51-53a14.png" alt="Logo Ville de Nancy" />
+        </a>
+        <a href="https://maisonduvelo.grandnancy.eu/accueil">
+          <img src="images/partenaires/siteon54-0d284.png" alt="Logo Maison du Vélo Grand Nancy" />
+        </a>
+        <a href="http://www.facebook.com/vttfunclub">
+          <img src="images/partenaires/siteon57-04342.jpg" alt="Logo Facebook VTT Fun Club" />
+        </a>
+        <a href="https://www.culturevelo.com/-Nancy-">
+          <img src="images/partenaires/siteon58-eba6e.jpg" alt="Logo Culture Vélo Nancy" />
+        </a>
+        <a href="https://www.grandest.fr/">
+          <img src="images/partenaires/siteon59-60303.png" alt="Logo Région Grand Est" />
+        </a>
+        <a href="http://www.comitecyclisme54.fr/">
+          <img src="images/partenaires/siteon64-544af.png" alt="Logo Comité Cyclisme 54" />
+        </a>
+        <a href="http://domethic.com/">
+          <img src="images/partenaires/siteon68-4e15e.png" alt="Logo Domethic" />
+        </a>
+        <a href="https://www.supermarchesmatch.fr/fr">
+          <img src="images/partenaires/siteon69-c1c7e.jpg" alt="Logo Supermarchés Match" />
+        </a>
       </div>
     </section>
   </body>

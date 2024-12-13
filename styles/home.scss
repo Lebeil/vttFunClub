@@ -120,6 +120,10 @@ nav {
       display: block;
     }
   }
+
+  #Top {
+    height: 20px;
+  }
 }
 
 //** Hero video **//
@@ -187,6 +191,7 @@ footer {
   background-color: #333;
   padding: 15px 0;
   width: 100%;
+  z-index: -1;
 
   .footer-content {
     display: flex;
@@ -203,6 +208,7 @@ footer {
       margin-bottom: 20px;
       display: flex;
       gap: 20px;
+      z-index: 1;
 
       a {
         color: $text-white;
@@ -237,6 +243,7 @@ footer {
 .partenaires {
   h2 {
     text-align: center;
+    margin-top: 20px;
   }
 
   .partenaire-logo {
@@ -285,12 +292,30 @@ footer {
   padding: 2rem 1rem;
   background-color: $color-primary;
 
+  @media (max-width: 768px) {
+    margin-top: 20px;
+
+    .warning-banner {
+      padding-bottom: 100px;
+    }
+  }
+
   h2 {
     text-align: center;
     margin-bottom: 2rem;
     color: $text-white;
     font-size: 2.5rem;
     text-decoration: underline;
+
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      width: auto;
+
+      @media (max-width: 768px) {
+        max-width: 80%; // Ajustez ce pourcentage selon vos besoins
+      }
+    }
   }
 
   p {
@@ -392,6 +417,12 @@ footer {
 
 body {
   padding-top: 80px;
+}
+
+body.home {
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
 }
 
 //** Les petites annonces **//
@@ -592,5 +623,320 @@ body {
 
   .form-grid {
     grid-template-columns: 1fr !important;
+  }
+}
+
+// Rdv Hebdo
+#heavy {
+  color: #5b3815;
+  font-weight: bold;
+}
+.linkmap {
+  a {
+    color: #5b3815;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+// Variables
+$breakpoint-mobile: 768px;
+$nav-height-mobile: auto;
+$nav-height-desktop: 80px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+
+// Navigation
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: $color-primary;
+  z-index: 1000;
+
+  // Mobile styles (default)
+  height: $nav-height-mobile;
+  padding: 0.5rem;
+
+  .nav-menu {
+    display: none;
+
+    &:target {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .nav-item {
+    width: 100%;
+
+    .submenu {
+      position: static;
+      width: 100%;
+      display: none;
+
+      &:target {
+        display: block;
+      }
+    }
+
+    a,
+    span {
+      display: block;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+
+  .nav-search {
+    width: 100%;
+    padding: 1rem 0;
+
+    input {
+      width: 100%;
+    }
+  }
+
+  // Menu toggle pour mobile
+  .menu-toggle {
+    display: block;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+
+    &::after {
+      content: "☰";
+      font-size: 1.5rem;
+    }
+  }
+
+  // Desktop styles
+  @media (min-width: $breakpoint-mobile) {
+    height: $nav-height-desktop;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 2rem;
+    }
+
+    .nav-item {
+      width: auto;
+      position: relative;
+      margin: 0 1rem;
+
+      .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+      }
+
+      &:hover .submenu {
+        display: block;
+      }
+    }
+  }
+}
+
+// Autres sections responsives
+.hero {
+  &-content {
+    h1 {
+      font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    p {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+  }
+}
+
+.articles-recents {
+  .articles-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+
+    @media (min-width: $breakpoint-mobile) {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+
+  .article-card {
+    flex-direction: column;
+    height: auto;
+
+    @media (min-width: $breakpoint-mobile) {
+      flex-direction: row;
+      height: 200px;
+    }
+
+    .article-image {
+      width: 100%;
+      height: 200px;
+
+      @media (min-width: $breakpoint-mobile) {
+        width: 30%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.partenaires {
+  .partenaire-logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+      max-width: 150px;
+      margin: auto;
+    }
+  }
+}
+
+// Footer responsive
+footer {
+  .nav-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+
+    @media (min-width: $breakpoint-mobile) {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
+
+// Ajoutez ces styles pour le menu hamburger
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      left: 0;
+    }
+
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      bottom: -8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 0;
+    z-index: 1000;
+
+    .nav-toggle-label {
+      display: block;
+      order: 1;
+    }
+
+    .nav-menu {
+      display: none;
+      width: 100%;
+      order: 3;
+      margin: 0;
+      padding: 0;
+      background-color: $color-primary;
+
+      .nav-item {
+        margin: 0;
+        width: 100%;
+
+        a,
+        span {
+          display: block;
+          padding: 1rem;
+          border-top: 1px solid lighten($color-primary, 10%);
+        }
+
+        .submenu {
+          position: static;
+          width: 100%;
+          box-shadow: none;
+
+          a {
+            padding-left: 2rem;
+            background-color: darken($color-primary, 5%);
+          }
+        }
+      }
+    }
+
+    .nav-search {
+      order: 2;
+      margin: 0;
+      padding: 1rem;
+      width: 100%;
+
+      input[type="search"] {
+        width: 100%;
+      }
+    }
+  }
+
+  // Afficher le menu quand la checkbox est cochée
+  .nav-toggle:checked ~ .nav-menu {
+    display: block;
+  }
+}
+
+// Styles desktop existants (au-dessus de 768px)
+@media (min-width: 769px) {
+  nav {
+    .nav-menu {
+      display: flex;
+
+      .nav-item {
+        .submenu {
+          position: absolute;
+        }
+      }
+    }
   }
 }
